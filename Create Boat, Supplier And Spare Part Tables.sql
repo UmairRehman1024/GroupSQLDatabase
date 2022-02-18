@@ -3,13 +3,13 @@ CREATE TABLE Supplier (
     Address VARCHAR(30),
     PostCode VARCHAR(8),
     Telephone VARCHAR(15),
-    Email VARCHAR(20)
+    Email VARCHAR(20) UNIQUE
 );
 
 CREATE TABLE Boat (
 	BoatID INT PRIMARY KEY AUTO_INCREMENT,
     SupplierID INT NOT NULL,
-    ClassID INT NOT NULL,
+    ClassID INT,
     PurchaseDate DATE,
     PurchaseValue DECIMAL(8, 2),
     Model VARCHAR(20),
