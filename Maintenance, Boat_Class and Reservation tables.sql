@@ -18,13 +18,13 @@ create table Reservation (
 
 create table Maintenance (
 	BoatID int,
-    MainRefNo int AUTO_INCREMENT,
+    MainRefNo int UNIQUE,
     FaultDetails varchar(100),
     FaultDate date,
     ActionDetails varchar(50),
     ActionDate date,
     Priority INT DEFAULT 2,
     
-	constraint primary key (BoatID, MainRefNo),
+	CONSTRAINT primary key (BoatID, MainRefNo),
     CONSTRAINT FK_BOAT_ID FOREIGN KEY (BoatID) REFERENCES Boat (BoatID) ON UPDATE CASCADE
 );
