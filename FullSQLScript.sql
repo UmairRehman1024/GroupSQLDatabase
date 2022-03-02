@@ -19,10 +19,11 @@ DROP TABLE IF EXISTS Supplier;
 
 CREATE TABLE Supplier (
 	SupplierID INT PRIMARY KEY AUTO_INCREMENT,
-    Address VARCHAR(30),
+	SupplierName VARCHAR(50),
+    Address VARCHAR(50),
     PostCode VARCHAR(8),
     Telephone VARCHAR(15),
-    Email VARCHAR(20) UNIQUE
+    Email VARCHAR(40) UNIQUE
 );
 
 create table Boat_Class (

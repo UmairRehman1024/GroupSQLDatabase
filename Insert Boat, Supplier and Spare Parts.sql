@@ -1,3 +1,15 @@
+INSERT INTO Supplier (SupplierID, SupplierName, Address, PostCode, Telephone, Email) VALUES
+	(1, "SuperBoat", "Unit 7 Centurion Court, Leyland", "LE10 2DJ", "01772459666", "admin@superboat.co.uk"),
+    (2, "Explorer Boats UK", "Meadow Lane, Burscough", "BU56 8GH", "01704807654", "admin@explorerboats.co.uk"),
+    (3, "The Northwich Boat Company", "Unit 1 Kings Lock Boatyard Booth Lane, Middlewich", "MW67 7GY", "01270160160", "admin@northwichboats.co.uk"),
+    (4, "Collingwood Boat Builders", "29 Townsend Street, Collingwood", "CL27 2DU", "01513742985", "admin@collingwoodboats.co.uk"),
+    (5, "Elton Moss Boat Builders", "Unit 4 Kings Lock Boatyard Booth Lane, Middlewich", "MW63 8TY", "01270760160", "admin@eltonmossboats.co.uk"),
+    (6, "Aintree Boat Company Ltd", "Brookfield Drive, Liverpool", "L1 6GU", "01515239000", "admin@aintreeboats.co.uk"),
+    (7, "Braidbar Boats Ltd", "Lord Vernons Wharf Lyme Road Higher, Poynton", "PY12 9TS", "01625873471", "admin@braidbarboats.co.uk"),
+    (8, "Bourne Boat Builders Ltd", "Teddesley Road, Penkridge", "PE8 7SU", "01785714692", "admin@bourneboats.co.uk"),
+    (9, "Stoke on Trent Boat Building Co Ltd", "Longport Wharf Station Street, Stoke-on-Trent", "ST6 9GU", "01782813831", "admin@stokeboats.co.uk"),
+    (10, "MGM Boats Narrowboat Builders", "27 Mill Lane, Leicester", "LE6 9FY", "01162640009", "admin@mgmboats.co.uk");
+
 INSERT INTO Boat (BoatID, SupplierID, ClassID, PurchaseDate, PurchaseValue, Model) VALUES
 	(1, 1, 7, "2010-11-22", 3910, "Explorer"),
     (2, 2, 1, "2009-10-12", 3840, "TurboSail"),
