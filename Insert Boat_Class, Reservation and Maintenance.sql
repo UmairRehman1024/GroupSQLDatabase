@@ -13,6 +13,13 @@ Values	(1, 'Sail boat', 'very large', 240, 170),
 		(11, 'Row boat', 'standard', 120, 80 ),
 		(12, 'Row boat', 'small', 110, 70);
         
+insert into Reservation
+	(ReservationID, ClassID, CustomerID, ReserveDate, PeriodOfHire)
+Values(5359, 3, 10, '2020-10-20', 1),
+	(5362, 3, 9, '2020-10-20', 1),
+    (5365, 3, 11, '2020-10-20', 1),
+    (5363, 3, 9, '2020-10-20', 1);
+    
 insert into Maintenance 
 	(BoatID, MainRefNo, FaultDetails, FaultDate, ActionDetails, ActionDate)
 Values(1, 1, 'Chipped propeller', '2015-02-15', 'Replace Propeller', '2015-02-27'),
