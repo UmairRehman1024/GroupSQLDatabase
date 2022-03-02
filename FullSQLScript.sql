@@ -52,8 +52,8 @@ CREATE TABLE Spare_Part (
 
 create table Boat_Class (
 	ClassID int primary key auto_increment,
-    Classification varchar(20) CHECK (Classification IN ("very large", "large", "standard", "small")),
-    Size varchar(15) CHECK (Classification IN ("very large", "large", "standard", "small")),
+    Classification varchar(20) CHECK (Classification IN ("Sail boat", "Motor boat", "Row boat")),
+    Size varchar(15) CHECK (Size IN ("very large", "large", "standard", "small")),
     HalfDayPrice decimal (5,2),
     FullDayPrice decimal (5,2)
 );
