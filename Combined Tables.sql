@@ -1,3 +1,9 @@
+DROP TABLE IF EXISTS Disposal;
+DROP TABLE IF EXISTS Dealer;
+DROP TABLE IF EXISTS Rental;
+DROP TABLE IF EXISTS Customer;
+
+
 DROP TABLE IF EXISTS Reservation;
 DROP TABLE IF EXISTS Maintenance;
 DROP TABLE IF EXISTS Boat_Class;
@@ -5,6 +11,8 @@ DROP TABLE IF EXISTS Boat_Class;
 DROP TABLE IF EXISTS Boat;
 DROP TABLE IF EXISTS Spare_Part;
 DROP TABLE IF EXISTS Supplier;
+
+
 
 CREATE TABLE Supplier (
 	SupplierID INT PRIMARY KEY AUTO_INCREMENT,
@@ -90,22 +98,24 @@ CONSTRAINT customer_renting FOREIGN KEY (customerID) REFERENCES Customer(custome
 CONSTRAINT boat_key FOREIGN KEY(BoatID) REFERENCES Boat (BoatID)
 );
 
-create table Disposal (
-DealerID int primary key auto_increment,
-BoatNumber int primary key auto_increment,
-SaleDate date,
-SalePrice int,
 
-CONSTRAINT primary key (DealerID, BoatNumber),
-constraint fk_DealerID foreign key (DealerID) references Dealer_Class (DealerID) ON UPDATE CASCADE
-);
 
 create table Dealer (
 DealerID int primary key auto_increment,
 DealerName varchar(50),
 Address varchar(100),
 TelephoneNumber int,
-Email varchar(100),
+Email varchar(100)
 
-CONSTRAINT primary key (DealerID)
+
+);
+
+create table Disposal (
+DealerID int ,
+BoatNumber int ,
+SaleDate date,
+SalePrice int,
+
+CONSTRAINT primary key (DealerID, BoatNumber),
+constraint fk_DealerID foreign key (DealerID) references Dealer (DealerID) ON UPDATE CASCADE
 );
