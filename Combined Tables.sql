@@ -1,8 +1,10 @@
+/************************************************************************************************************************/
+/* Drop tables (if existing) */
+
 DROP TABLE IF EXISTS Disposal;
 DROP TABLE IF EXISTS Dealer;
 DROP TABLE IF EXISTS Rental;
 DROP TABLE IF EXISTS Customer;
-
 
 DROP TABLE IF EXISTS Reservation;
 DROP TABLE IF EXISTS Maintenance;
@@ -12,7 +14,8 @@ DROP TABLE IF EXISTS Boat;
 DROP TABLE IF EXISTS Spare_Part;
 DROP TABLE IF EXISTS Supplier;
 
-
+/************************************************************************************************************************/
+/* Create Supplier, Boat and Spare Part tables (By Benjamin) */
 
 CREATE TABLE Supplier (
 	SupplierID INT PRIMARY KEY AUTO_INCREMENT,
@@ -43,6 +46,9 @@ CREATE TABLE Spare_Part (
     
     CONSTRAINT FK_SPARE_PART_SUPPLIER_ID FOREIGN KEY (SupplierID) REFERENCES Supplier (SupplierID) ON UPDATE CASCADE
 );
+
+/************************************************************************************************************************/
+/* Create Boat Class, Reservation and Maintainance tables (By Umair) */
 
 create table Boat_Class (
 	ClassID int primary key auto_increment,
@@ -75,6 +81,9 @@ create table Maintenance (
     CONSTRAINT FK_BOAT_ID FOREIGN KEY (BoatID) REFERENCES Boat (BoatID) ON UPDATE CASCADE
 );
 
+/************************************************************************************************************************/
+/* Create Customer and Rental tables (By Yves) */
+
 CREATE TABLE Customer (
 CustomerID  INT PRIMARY KEY,
 First_name  VARCHAR(45),
@@ -98,7 +107,8 @@ CONSTRAINT customer_renting FOREIGN KEY (customerID) REFERENCES Customer(custome
 CONSTRAINT boat_key FOREIGN KEY(BoatID) REFERENCES Boat (BoatID)
 );
 
-
+/************************************************************************************************************************/
+/* Create Dealer and Disposal tables (By Aaron) */
 
 create table Dealer (
 DealerID int primary key auto_increment,
@@ -119,3 +129,5 @@ SalePrice int,
 CONSTRAINT primary key (DealerID, BoatNumber),
 constraint fk_DealerID foreign key (DealerID) references Dealer (DealerID) ON UPDATE CASCADE
 );
+
+/************************************************************************************************************************/
