@@ -106,7 +106,7 @@ create table Dealer (
 DealerID int primary key auto_increment,
 DealerName varchar(50),
 Address varchar(100),
-TelephoneNumber int,
+TelephoneNumber varchar(15),
 Email varchar(100)
 );
 
