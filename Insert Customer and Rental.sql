@@ -12,7 +12,12 @@ VALUES (1, 'Dion', 'Brodnecke', '9 Oak Street Liverpool', 'dbroes1@who.int', '07
 (11, 'John', 'Terry', null, 'Terry2D@ok.com', '0201772227', 'SE10 1NH'),
 (12, 'Justin', 'Beiber', null, 'Beiber@pop.com', '0167756413', 'LABC564' ),
 (13, 'David', 'Hockney', null, 'hockers@gall.com', '0154326412', 'N1 1XY'),
-(14, 'David', 'Blaine', null, 'blaine@magic.org', '0154326412', 'N1 1XY');
+(14, 'David', 'Blaine', null, 'blaine@magic.org', '0154326412', 'N1 1XY'),
+(15, 'Yves', 'Niyo', null, 'yniyo54@gmail.com', '07893647292','BL4 6YH'),
+(16, 'Michael', 'Jackson', null, 'michaelj@hotmail.com', '01612836493', 'M25 7DK'),
+(17, 'Harry', 'Maguire', null, 'harry5@yahoo.com', '074629213764', 'S7 7DG'),
+(18, 'Yves', 'Bissouma', '98 Withins Drive, Brighton', '07284629462', 'BN5 7BH'), 
+(19, 'Frederico', 'Hernandez', '84 Long Lane, London', '07938365439', 'SW16 6TY');
 
 
 
@@ -42,4 +47,9 @@ VALUES (4734, '2019-05-02', 125, 11, 00001,0.5),
 (5361, '2020-10-20', 240, 8, 2, 1),
 (5342, '2020-04-27', 180, 1, 16, 1),
 (5341, '2019-10-20', 0, 4, 6, 1),
-(5343, '2019-12-09', 240, 2, 6, 1);
+(5343, '2019-12-09', 240, 2, 6, 1),
+(5676, '2019-12-09', 230, 19,26, 1),
+(5677, '2019-12-09', 180, 12,3, 1),
+(5678, '2019-12-09', 280, 9,7, 1),
+(5679, '2019-12-09', 500, 13,12, 2),
+(5680, '2019-12-09', 340, 8,1, 1);
