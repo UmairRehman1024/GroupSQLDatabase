@@ -8,7 +8,12 @@ INSERT INTO Supplier (SupplierID, SupplierName, Address, PostCode, Telephone, Em
     (7, "Braidbar Boats Ltd", "Lord Vernons Wharf Lyme Road Higher, Poynton", "PY12 9TS", "01625873471", "admin@braidbarboats.co.uk"),
     (8, "Bourne Boat Builders Ltd", "Teddesley Road, Penkridge", "PE8 7SU", "01785714692", "admin@bourneboats.co.uk"),
     (9, "Stoke on Trent Boat Building Co Ltd", "Longport Wharf Station Street, Stoke-on-Trent", "ST6 9GU", "01782813831", "admin@stokeboats.co.uk"),
-    (10, "MGM Boats Narrowboat Builders", "27 Mill Lane, Leicester", "LE6 9FY", "01162640009", "admin@mgmboats.co.uk");
+    (10, "MGM Boats Narrowboat Builders", "27 Mill Lane, Leicester", "LE6 9FY", "01162640009", "admin@mgmboats.co.uk"),
+    (11, "Zinter Ltd", "13 Lower Chatham Street, Manchester", "M1 5SX", "01262348009", "admin@zinter.co.uk"),
+    (12, "Speed Shack", "27 Hart Lane, London", "N3 9GW", "01162640009", "admin@speedshack.co.uk"),
+    (13, "Kayak Verse", "12 Binter Road, Sheffield", "S6 4FV", "02206952396", "admin@kayakverse.co.uk"),
+    (14, "Aston Boats Ltd", "4 Ulton Road, Leicester", "LE1 3RG", "01762648579", "admin@astonboats.co.uk"),
+    (15, "Rapid Rowing Ltd", "69 Hilton Drive, Bolton", "LE6 4FO", "08164567869", "admin@rapidrowing.co.uk");
 
 INSERT INTO Boat (BoatID, SupplierID, ClassID, PurchaseDate, PurchaseValue, Model) VALUES
 	(1, 1, 7, "2010-11-22", 3910, "Explorer"),
@@ -33,4 +38,9 @@ INSERT INTO Boat (BoatID, SupplierID, ClassID, PurchaseDate, PurchaseValue, Mode
     (20, 7, 5, "2018-01-14", 5440, "SuperBlaster"),
     (21, 6, 11, "2017-01-09", 5440, "Lizard"),
     (22, 5, 6, "2018-02-14", 5440, "Grande"),
-    (23, 2, 2, "2015-10-12", 5440, "MasterSail");
+    (23, 2, 2, "2015-10-12", 5440, "MasterSail"),
+    (24, 3, 11, "2013-12-16", 7000, "TurboSail"),
+    (25, 7, 10, "2017-12-16", 3500, "Classic"),
+    (26, 4, 4, "2018-09-12", 2860, "PremiumSail"),
+    (27, 6, 5, "2012-05-19", 4800, "NightShark"),
+    (28, 6, 5, "2013-01-30", 4800, "NightShark");
